@@ -1,67 +1,74 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flowers</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="style2.css"/>
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My first website</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- ту слід під'єднати файл стилів -->
 </head>
+
 <body>
-    <header>
-        <nav>
-            <a class="logo" href="#">
-                 <img src="img/logo.png" alt="Рожева квітка">
-            </a>
+  <header>
+    <h1>My Website Heading</h1>
+  </header>
 
-            <a href="./login.html">To Login</a>
-        </nav>   
-    </header>
 
-    <main>
-        <div class="wrap">
-            <section>
-                <h1 class="section-title">Ніжність у квітах</h1>
-            </section>
-            <section class="pion">
-                <img src="img/pion.jpg" alt="Рожеві піони.">
-                <h2>Піон рожевий</h2>
-                <p>Пишні, ніби хмаринки, пелюстки піона утворюють м’яку кулю,
-                 що розкривається шарами. Його відтінки — від пудрово-рожевого до насиченого
-                  малинового — виглядають теплo й казково. Аромат легкий, солодкуватий, дуже жіночний.</p>
-            </section>
-            <section class="rose">
-                <img src="img/rose.jpg" alt="Рожеві троянди.">
-                <h2>Рожева троянда</h2>
-                <p>Класика ніжності. Рожева троянда символізує теплі почуття та делікатну увагу.
-                 Її пелюстки гладенькі, шовкові, з м’яким градієнтом від світлого краю до темнішого серединки.
-                 Має елегантний, романтичний запах.</p>
-            </section>
-            <section class="alstromeria">
-                <img src="img/alstromeria.jpg" alt="Рожеві альстромерії.">
-                <h2>Альстромерія рожево-персикова</h2>
-                <p>Квіти з тонкими пелюстками та дрібними цяточками всередині. 
-                Відтінок — лагідний рожево-персиковий, що нагадує світанок. 
-                Вони виглядають живо й піднімають настрій, додаючи композиції легкості та світла.</p>
-            </section>
-            <section class="hortensia">
-                <img src="img/hortensia.jpg" alt="Рожеві гортензії.">
-                <h2>Рожева гортензія</h2>
-                <p>Об’ємні суцвіття, що складаються з маленьких квіточок-пелюсточок.
-                 Її рожевий колір ніжний і теплий, іноді з легким відливом у кораловий. 
-                 Виглядає дуже повітряно та елегантно, ніби пухнаста хмарка.</p>
-            </section>
-        </div>
+  <!-- тут слід вставити горизонтальну панель навігації -->
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Contact</a>
+    <a href="#">Services</a>
+    <a href="#">Products</a>
+    <a href="#">Clients</a>
+    <a href="#">About</a>
+    <a href="#">Resources</a>
+    <a href="#">Extra</a>
+  </nav>
+
+  <div class="columns">
+    <aside>
+      <ul class="side-menu">
+        <li id="menu-header">Main Menu</li>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">JavaScript</a></li>
+      </ul>
+    </aside>
+    <main class="main-content">
+      <h2>Ніжність у квітах</h2>
+
+      <p id-data="1"> <img src="img/pion.jpg" alt="Рожеві піони.">Пишні, ніби хмаринки, пелюстки піона утворюють м’яку
+        кулю,
+        що розкривається шарами. Його відтінки — від пудрово-рожевого до насиченого
+        малинового — виглядають теплo й казково. Аромат легкий, солодкуватий, дуже жіночний.</p>
+
+      <p id-data="2"> <img src="img/rose.jpg" alt="Рожеві троянди.">Класика ніжності. Рожева троянда символізує теплі
+        почуття та делікатну увагу.
+        Її пелюстки гладенькі, шовкові, з м’яким градієнтом від світлого краю до темнішого серединки.
+        Має елегантний, романтичний запах.</p>
+
+      <h2>Ніжність у квітах</h2>
+
+      <p id-data="1"> <img src="img/alstromeria.jpg" alt="Рожеві альстромерії.">Квіти з тонкими пелюстками та дрібними
+        цяточками всередині.
+        Відтінок — лагідний рожево-персиковий, що нагадує світанок.
+        Вони виглядають живо й піднімають настрій, додаючи композиції легкості та світла.</p>
+
+      <p id-data="2"> <img src="img/hortensia.jpg" alt="Рожеві гортензії."> Об’ємні суцвіття, що складаються з маленьких
+        квіточок-пелюсточок.
+        Її рожевий колір ніжний і теплий, іноді з легким відливом у кораловий.
+        Виглядає дуже повітряно та елегантно, ніби пухнаста хмарка.</p>
+
+
     </main>
-
-    <footer class="page-footer">
-        Дякуємо, що обираєте прекрасне!
-    </footer>
+  </div>
+  <div></div>
+  <footer>
+    <p> &copy 2025, All Right Reserved. </p>
+  </footer>
 </body>
+
 </html>

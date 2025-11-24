@@ -1,0 +1,173 @@
+:root {
+    --color-primary-light: #e21a9f;
+    --color-flowers-p: #f199d4;
+    --color-background: #f082c2;
+    --font-base: "Roboto Mono", sans-serif;
+    --font-size-base: 1rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-base);
+    font-size: var(--font-size-base);
+    color: var(--color-primary-light);
+    background-color: #e21a9f;
+    background-color: url(img/rose.jpg.jpg)
+    line-height: 1.5;
+}
+
+header {
+    background-color: var(--color-background);
+    padding: 1rem 2rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    color: var(--color-primary-light);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.section-title {
+    color: var(--color-background);
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+h2 {
+    color: var(--color-flowers-p);
+    font-style: italic;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+h2::first-letter {
+    font-size: 1.3em;
+    color: var(--color-background);
+}
+
+p {
+    text-align: center;
+    background-color: var(--color-background);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    margin: 0.5rem auto 2rem auto;
+    max-width: 800px;
+}
+
+img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+a {
+    color: var(--color-flowers-p);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: var(--color-background);
+    text-decoration: underline;
+}
+
+.page-footer {
+    background-color: #ec1c87;
+    color: var(--color-primary-light);
+    text-align: center;
+    padding: 1rem 0;
+    font-style: italic;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+.login-bg {
+    background: linear-gradient(rgba(255, 0, 136, 0.575), rgba(255, 105, 180, 0.4)),
+                url("img/rose.jpg") center/cover no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-box {
+    width: 350px;
+    padding: 30px;
+    background: rgba(210, 24, 83, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(140, 3, 58, 0.504);
+    text-align: center;
+}
+
+.login-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.login-box h2 {
+    color: #d14fa2;
+    margin-bottom: 20px;
+    font-size: 1.75rem;
+}
+
+.login-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-box input {
+    padding: 12px;
+    border: 1px solid #d59ac6;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.login-box button {
+    padding: 12px;
+    border: none;
+    background: #d14fa2;
+    color: rgb(235, 10, 78);
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-box button:hover {
+    background: #b83c8c;
+}
+
+.back-link {
+    display: block;
+    margin-top: 15px;
+    color: #c5125f;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
