@@ -1,74 +1,118 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>My first website</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- ту слід під'єднати файл стилів -->
+    <meta charset="UTF-8">
+    <title>Магазин Квітів</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header>
-    <h1>My Website Heading</h1>
-  </header>
+
+<header id="top">
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Головна</a></li>
+
+            <li class="has-submenu">
+                <a href="#">Каталог ▼</a>
+                <ul class="submenu">
+                    <li><a href="#">Троянди</a></li>
+                    <li><a href="#">Букети</a></li>
+                    <li><a href="#">Композиції</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Про нас</a></li>
+            <li><a href="#">Контакти</a></li>
+            <li><a href="login.html">Вхід</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="search-box">
+    <input type="text" placeholder="Пошук квітів...">
+    <button>🔍</button>
+</div>
+
+<section class="gallery">
+    <h2>Наші квіти</h2>
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <img src="img/flower1.jpg" alt="Квіти 1">
+            <p class="flower-name">Троянда</p>
+        </div>
+        <div class="gallery-item">
+            <img src="img/flower2.jpg" alt="Квіти 2">
+            <p class="flower-name">Півонія</p>
+        </div>
+        <div class="gallery-item">
+            <img src="img/flower3.jpg" alt="Квіти 3">
+            <p class="flower-name">Ромашка</p>
+        </div>
+        <div class="gallery-item">
+            <img src="img/flower4.jpg" alt="Квіти 4">
+            <p class="flower-name">Ранункулюс</p>
+        </div>
+        <div class="gallery-item">
+            <img src="img/flower5.jpg" alt="Квіти 5">
+            <p class="flower-name">Лілія</p>
+        </div>
+        <div class="gallery-item">
+            <img src="img/flower6.jpg" alt="Квіти 6">
+            <p class="flower-name">Тюльпан</p>
+        </div>
+    </div>
+</section>
+
+<section class="highlights">
+    <div class="highlight-item">
+        <img src="img/flower7.jpg" alt="Особлива квітка">
+        <div class="highlight-text">Особлива квітка</div>
+    </div>
+    </section>
+<section class="highlights">
+    <div class="highlight-item">
+        <img src="img/flower1.jpg" alt="Троянда">
+        <div class="highlight-text">Ранункулюс</div>
+    </div>
+
+    <div class="highlight-item">
+        <img src="img/flower2.jpg" alt="Півонія">
+        <div class="highlight-text">Лілія</div>
+    </div>
+
+    <div class="highlight-item">
+        <img src="img/flower3.jpg" alt="Ромашка">
+        <div class="highlight-text">Тюльпан</div>
+    </div>
+</section>
+
+    <div class="highlight-item">
+        <img src="img/flower8.jpg" alt="Ексклюзив">
+        <div class="highlight-text">Ексклюзив</div>
+    </div>
+</section>
+
+<section class="highlights">
+    <div class="highlight-item">
+        <img src="img/flower1.jpg" alt="Троянда">
+        <div class="highlight-text">Троянда</div>
+    </div>
+
+    <div class="highlight-item">
+        <img src="img/flower2.jpg" alt="Півонія">
+        <div class="highlight-text">Півонія</div>
+    </div>
+
+    <div class="highlight-item">
+        <img src="img/flower3.jpg" alt="Ромашка">
+        <div class="highlight-text">Ромашка</div>
+    </div>
+</section>
 
 
-  <!-- тут слід вставити горизонтальну панель навігації -->
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">Contact</a>
-    <a href="#">Services</a>
-    <a href="#">Products</a>
-    <a href="#">Clients</a>
-    <a href="#">About</a>
-    <a href="#">Resources</a>
-    <a href="#">Extra</a>
-  </nav>
+<button class="up" onclick="window.location='#top'">▲</button>
 
-  <div class="columns">
-    <aside>
-      <ul class="side-menu">
-        <li id="menu-header">Main Menu</li>
-        <li><a href="#">HTML</a></li>
-        <li><a href="#">CSS</a></li>
-        <li><a href="#">JavaScript</a></li>
-      </ul>
-    </aside>
-    <main class="main-content">
-      <h2>Ніжність у квітах</h2>
-
-      <p id-data="1"> <img src="img/pion.jpg" alt="Рожеві піони.">Пишні, ніби хмаринки, пелюстки піона утворюють м’яку
-        кулю,
-        що розкривається шарами. Його відтінки — від пудрово-рожевого до насиченого
-        малинового — виглядають теплo й казково. Аромат легкий, солодкуватий, дуже жіночний.</p>
-
-      <p id-data="2"> <img src="img/rose.jpg" alt="Рожеві троянди.">Класика ніжності. Рожева троянда символізує теплі
-        почуття та делікатну увагу.
-        Її пелюстки гладенькі, шовкові, з м’яким градієнтом від світлого краю до темнішого серединки.
-        Має елегантний, романтичний запах.</p>
-
-      <h2>Ніжність у квітах</h2>
-
-      <p id-data="1"> <img src="img/alstromeria.jpg" alt="Рожеві альстромерії.">Квіти з тонкими пелюстками та дрібними
-        цяточками всередині.
-        Відтінок — лагідний рожево-персиковий, що нагадує світанок.
-        Вони виглядають живо й піднімають настрій, додаючи композиції легкості та світла.</p>
-
-      <p id-data="2"> <img src="img/hortensia.jpg" alt="Рожеві гортензії."> Об’ємні суцвіття, що складаються з маленьких
-        квіточок-пелюсточок.
-        Її рожевий колір ніжний і теплий, іноді з легким відливом у кораловий.
-        Виглядає дуже повітряно та елегантно, ніби пухнаста хмарка.</p>
-
-
-    </main>
-  </div>
-  <div></div>
-  <footer>
-    <p> &copy 2025, All Right Reserved. </p>
-  </footer>
 </body>
-
 </html>
+
